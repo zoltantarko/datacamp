@@ -12,6 +12,5 @@ X = churn_df[["account_length", "customer_service_calls"]].values
 knn = KNeighborsClassifier(n_neighbors=6)
 # Fit the classifier to the data
 knn.fit(X, y)
-#print(knn.score)
 y_pred = knn.predict(X_new)
 print("Predictions: {}".format(y_pred)) 
