@@ -32,10 +32,10 @@ print(neighbors, '\n', train_accuracies, '\n', test_accuracies)
 plt.title("KNN: Varying Number of Neighbors")
 
 # Plot training accuracies
-plt.plot(neighbors, train_accuracies.values(), label="Training Accuracy")
+plt.plot(neighbors, train_accuracies.values, label="Training Accuracy")
 
 # Plot test accuracies
-plt.plot(neighbors, test_accuracies.values(), label="Testing Accuracy")
+plt.plot(neighbors, test_accuracies.values, label="Testing Accuracy")
 
 plt.legend()
 plt.xlabel("Number of Neighbors")
