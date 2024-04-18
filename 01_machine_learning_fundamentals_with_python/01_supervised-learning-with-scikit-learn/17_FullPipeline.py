@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV, train_test_split
 
-music_df = pd.read_csv("../music_clean.csv", header = 0)
+music_df = pd.read_csv("../00_resources/music_clean.csv", header = 0)
 
 X = music_df.drop("genre", axis=1).values
 y = music_df["genre"].values

@@ -4,7 +4,7 @@ import pandas as pd
 
 X_new = pd.DataFrame({'account_length': [30.0, 107.0, 213.0], 'customer_service_calls': [17.5, 24.1, 10.9]})
 
-churn_df = pd.read_csv('../churn_df.csv', header=0)
+churn_df = pd.read_csv('../00_resources/churn_df.csv', header=0)
 y = churn_df["churn"].values
 X = churn_df[["account_length", "customer_service_calls"]].values
 

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-sales_df = pd.read_csv('../advertising_and_sales_clean.csv', header=0)
+sales_df = pd.read_csv('../00_resources/advertising_and_sales_clean.csv', header=0)
 
 print(sales_df)
 # Create X from the radio column's values

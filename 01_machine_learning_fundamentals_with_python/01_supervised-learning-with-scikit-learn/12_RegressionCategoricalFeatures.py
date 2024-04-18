@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import cross_val_score, KFold
 
-music_df = pd.read_csv('../music_clean.csv', header=0)
+music_df = pd.read_csv('../00_resources/music_clean.csv', header=0)
 # Create music_dummies
 music_dummies = pd.get_dummies(music_df, drop_first=True)
 

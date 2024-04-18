@@ -6,7 +6,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 
-music_df = pd.read_csv("../music_clean.csv", header=0)
+music_df = pd.read_csv("../00_resources/music_clean.csv", header=0)
 
 # Print missing values for each column
 print(music_df.isna().sum().sort_values())

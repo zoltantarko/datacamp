@@ -6,7 +6,7 @@ from sklearn.linear_model import Lasso, LogisticRegression
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.pipeline import Pipeline
 
-music_df = pd.read_csv("../music_clean.csv", header=0)
+music_df = pd.read_csv("../00_resources/music_clean.csv", header=0)
 #X = music_df.drop("loudness", axis=1).values
 #y = music_df["loudness"].values
 X = music_df.drop("genre", axis=1).values

@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 
-diabetes_df = pd.read_csv('../diabetes_clean.csv', header=0)
+diabetes_df = pd.read_csv('../00_resources/diabetes_clean.csv', header=0)
 # Create X and y arrays
 X = diabetes_df[["bmi", "age"]].values
 y = diabetes_df["diabetes"].values

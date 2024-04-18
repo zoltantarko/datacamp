@@ -4,7 +4,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 
 
-churn_df = pd.read_csv('../churn_df.csv', header=0)
+churn_df = pd.read_csv('../00_resources/churn_df.csv', header=0)
 
 X = churn_df.drop("churn", axis=1).values
 y = churn_df["churn"].values

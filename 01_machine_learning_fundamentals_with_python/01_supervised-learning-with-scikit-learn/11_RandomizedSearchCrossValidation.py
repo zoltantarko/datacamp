@@ -3,7 +3,7 @@ from sklearn.linear_model import LogisticRegression
 import pandas as pd
 import numpy as np
 
-diabetes_df = pd.read_csv('../diabetes_clean.csv', header=0)
+diabetes_df = pd.read_csv('../00_resources/diabetes_clean.csv', header=0)
 # Create X and y arrays
 X = diabetes_df.drop("diabetes", axis=1).values
 y = diabetes_df["diabetes"].values

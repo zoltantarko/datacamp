@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
 
-music_df = pd.read_csv("../music_clean.csv", header=0)
+music_df = pd.read_csv("../00_resources/music_clean.csv", header=0)
 X = music_df.drop("energy", axis=1).values
 y = music_df["energy"].values
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.3, random_state=42)

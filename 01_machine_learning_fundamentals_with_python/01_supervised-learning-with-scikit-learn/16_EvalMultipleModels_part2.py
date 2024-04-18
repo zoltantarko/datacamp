@@ -7,7 +7,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
-music_df = pd.read_csv("../music_clean.csv", header=0)
+music_df = pd.read_csv("../00_resources/music_clean.csv", header=0)
 X = music_df.drop("popularity", axis=1).values
 y = music_df["popularity"].values
 

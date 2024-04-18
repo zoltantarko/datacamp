@@ -3,7 +3,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
-sales_df = pd.read_csv('../advertising_and_sales_clean.csv', header=0)
+sales_df = pd.read_csv('../00_resources/advertising_and_sales_clean.csv', header=0)
 # Create X and y arrays
 X = sales_df.drop("sales", axis=1).values
 y = sales_df["sales"].values
